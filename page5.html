@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333333;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 90vw; 
+            max-width: 1200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .projects {
+            width: 100%;
+            max-width: 1100px;
+            height: auto;
+            transform: translateX(-4.15%) translateY(0.3%);
+        }
+        .next {
+            width: 7vw;
+            max-width: 100px;
+            bottom: 12vh;
+            left: 55%;
+            position: absolute; 
+        }
+        .prev {
+            width: 7vw;
+            max-width: 100px;
+            bottom: 11vh;
+            left: 33%;
+            position: absolute; 
+        }
+        .hover-img {
+            position: absolute;
+            bottom: 63vh; 
+            left: 30%;
+            transition: opacity 0.3s ease-in-out; 
+        }
+        .hover-img2 {
+            position: absolute;
+            bottom: 53vh; 
+            left: 30%;
+            transition: opacity 0.3s ease-in-out; 
+        }
+        .hover-img img, .hover-img2 img {
+            width: 300px; 
+            height: auto; 
+        }
+        .hover-img2 img.normal {
+            width: 400px; 
+        }
+        .hover-img img.hover, .hover-img2 img.hover {
+            display: none;
+        }
+        .hover-img:hover img.normal, .hover-img2:hover img.normal {
+            display: none;
+        }
+        .hover-img:hover img.hover, .hover-img2:hover img.hover {
+            display: block;
+        }
+        
+        .resume{
+            width:450px;
+            height:auto;
+            position: absolute;
+            bottom: 47vh; 
+            left: 30%;
+            transition: opacity 0.3s ease-in-out; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="mainpage.html">
+            <img src="contact2.png" alt="Centered Image" class="projects">
+        </a>
+        <img src="next.png" class="next">
+        <a href="page4.html">
+            <img src="prev2.png" class="prev">
+        </a>
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ecg2195@barnard.edu" target="_blank" class="hover-img">
+            <img src="gmail.png" alt="Normal Image" class="normal">
+            <img src="gmail2.png" alt="Hover Image" class="hover">
+        </a>
+
+
+        <a href="https://www.linkedin.com/in/emilygan22" target="_blank" class="hover-img2">
+            <img src="LI3.png" alt="Normal Image" class="normal">
+            <img src="LI4.png" alt="Hover Image" class="hover normal">
+        </a>
+        <a href="resume2.png" target="_blank" >
+            <img src="res.png" alt="Normal Image" class="resume">
+        </a>
+        
+
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
