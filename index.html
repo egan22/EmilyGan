@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emily Gan</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333333;
+            overflow: hidden;
+        }
+        .zoom-out {
+            transform: scale(1) translateY(0);
+            transition: transform 0.4s ease-out;
+        }
+        .zoom-out.hidden {
+            transform: scale(0.7) translateY(250px);
+        }
+        .hover-image {
+            width: 50vw; 
+            max-width: 600px; 
+            height: auto; 
+            transition: all 0.3s ease;
+        }
+        .hover-image:hover {
+            content: url('play.png'); 
+        }
+        @media (max-width: 768px) {
+            .hover-image {
+                width: 70vw; 
+                max-width: none; 
+            }
+        }
+        @media (max-width: 480px) {
+            .hover-image {
+                width: 90vw; 
+                max-width: none; 
+            }
+        }
+    </style>
+</head>
+<body class="zoom-out">
+    <a href="page2.html" id="main-link">
+        <img src="pause.png" class="hover-image" alt="Centered Image">
+    </a>
+
+    <script>
+        document.getElementById('main-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.body.classList.add('hidden');
+            setTimeout(() => {
+                window.location.href = event.target.closest('a').href;
+            }, 500); 
+        });
+    </script>
+</body>
+</html>
+
