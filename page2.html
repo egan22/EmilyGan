@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333333;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 90vw; 
+            max-width: 1200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .aboutme {
+            width: 100%;
+            max-width: 1100px;
+            height: auto;
+        }
+        .me, .next, .prev, .hello, .qual, .blurb {
+            width: auto;
+            height: auto;
+            position: absolute;
+            transition: transform 0.3s ease; 
+        }
+        
+        .next {
+            width: 7vw;
+            max-width: 100px;
+            bottom: 12vh;
+            left: 55%;
+        }
+        .prev {
+            width: 7vw;
+            max-width: 100px;
+            bottom: 11vh;
+            left: 33%;
+        }
+        
+        @media (max-width: 768px) {
+            .next {
+                bottom: 15vh;
+                left: 60%;
+            }
+            .prev {
+                bottom: 15vh;
+                left: 40%;
+            }
+        }
+        @media (max-width: 480px) {
+            .me {
+                top: 10vh;
+                left: 50%;
+            }
+            .next {
+                bottom: 14vh;
+                left: 55%;
+            }
+            .prev {
+                bottom: 13vh;
+                left: 35%;
+            }
+            .hello {
+                top: 20vh;
+                left: 30%;
+            }
+            .qual {
+                top: 40vh;
+                left: 20%;
+            }
+            .blurb {
+                top: 40vh;
+                left: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="mainpage.html">
+            <img src="page2.png" alt="Centered Image" class="aboutme">
+        </a>
+        <a href="page3.html">
+            <img src="next.png" class="next">
+        </a>
+        <img src="prev2.png" class="prev">
+        
+    </div>
+</body>
+</html>
+
+
