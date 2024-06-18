@@ -81,6 +81,71 @@
                 left: 50%;
             }
         }
+        .inqueue {
+            position: absolute;
+            width: 50vw;
+            max-width: 250px;
+            bottom: 85vh;
+            left: 0%;
+            z-index: 10;
+        }
+        .aboutmebox {
+            position: absolute;
+            width: 50vw;
+            max-width: 250px;
+            bottom: 70vh;
+            left: 0%;
+            z-index: 10;
+        }
+        .queueexperience {
+            position: absolute;
+            width: 50vw;
+            max-width: 250px;
+            bottom: 59vh; 
+            left: 0%;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .queueexperience:hover {
+            content: url('queueexperiencecheck.png');
+        }
+        .queueprojects {
+            position: absolute;
+            width: 50vw;
+            max-width: 250px;
+            bottom: 46vh; 
+            left: 0%;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .queueprojects:hover {
+            content: url('queueprojectscheck.png');
+        }
+        .queuecontact {
+            position: absolute;
+            width: 50vw;
+            max-width: 250px;
+            bottom: 37vh; 
+            left: 0%;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .queuecontact:hover {
+            content: url('queuecontactcheck.png');
+        }
+        .nextpage {
+            position: absolute;
+            width: 50vw;
+            max-width: 250px;
+            bottom: -10vh; 
+            left: 61%; 
+            z-index: 10;
+            opacity: 0; 
+        }
+        .nextpage.show {
+            bottom: 16vh; 
+            opacity: 1; 
+        }
     </style>
 </head>
 <body>
@@ -92,9 +157,32 @@
             <img src="next.png" class="next">
         </a>
         <img src="prev2.png" class="prev">
-        
+        <img src="inqueue.png" class="inqueue">
+        <img src="queueaboutmecheck.png" class="aboutmebox">
+        <a href="page3.html">
+            <img src="queueexperience.png" class="queueexperience">
+        </a>
+        <a href="page4.html">
+            <img src="queueprojects.png" class="queueprojects">
+        </a>
+        <a href="page5.html">
+            <img src="queuecontact.png" class="queuecontact">
+        </a>
+        <img src="nextpage.png" class="nextpage">
     </div>
+
+    <script>
+       
+        setTimeout(function() {
+            const nextpage = document.querySelector('.nextpage');
+            nextpage.classList.add('show'); 
+        }, 3000); 
+    </script>
 </body>
 </html>
+
+
+
+
 
 
