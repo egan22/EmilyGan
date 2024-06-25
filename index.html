@@ -29,10 +29,22 @@
         .hover-image:hover {
             content: url('play.png'); 
         }
+        
+        /* Default - Message Hidden */
+        .message {
+            display: none;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* Show message and hide image for viewports less than 1440px */
         @media (max-width: 1440px) {
             .hover-image {
-                width: 70vw; 
-                max-width: none; 
+                display: none;
+            }
+            .message {
+                display: block;
             }
         }
         
@@ -48,6 +60,7 @@
     </style>
 </head>
 <body class="zoom-out">
+    <div class="message">Oops! Please view this page on a laptop</div>
     <a href="page2.html" id="main-link">
         <img src="pause.png" class="hover-image" alt="Centered Image">
     </a>
